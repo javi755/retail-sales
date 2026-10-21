@@ -1,0 +1,8 @@
+{
+  "enabledPlugins": {
+    "atscale-comodel@atscale-comodel": true
+  },
+  "permissions": {
+    "allow": ["Bash(comodel:*)"]
+  }
+}
