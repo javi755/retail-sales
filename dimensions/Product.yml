@@ -14,12 +14,15 @@ level_attributes:
     dataset: DIM_PRODUCT
     name_column: MERCH_CLASS
     key_columns:
+      - DEPARTMENT
       - MERCH_CLASS
   - unique_name: Subclass
     label: Subclass
     dataset: DIM_PRODUCT
     name_column: SUBCLASS
     key_columns:
+      - DEPARTMENT
+      - MERCH_CLASS
       - SUBCLASS
   - unique_name: SKU
     label: SKU
