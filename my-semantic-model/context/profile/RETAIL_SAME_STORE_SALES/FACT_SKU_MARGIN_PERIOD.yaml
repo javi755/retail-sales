@@ -1,0 +1,201 @@
+tables:
+- name: FACT_SKU_MARGIN_PERIOD
+  schema: RETAIL_SAME_STORE_SALES
+  sample_rows: 100
+  declared_primary_key: [SKU_SALES_KEY]
+  declared_foreign_keys:
+  - columns: [SKU_KEY]
+    references:
+      table: DIM_PRODUCT
+      columns: [SKU_KEY]
+  - columns: [STORE_KEY]
+    references:
+      table: DIM_STORE
+      columns: [STORE_KEY]
+  columns:
+  - name: SKU_SALES_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 100
+    mean: 50.5
+    sample_values: [1, 2, 3]
+  - name: DATE_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 20250202
+    max: 20250202
+    mean: 20250202.0
+    sample_values: [20250202]
+  - name: FISCAL_PERIOD_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 202501
+    max: 202501
+    mean: 202501.0
+    sample_values: [202501]
+  - name: STORE_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 1000
+    max: 1000
+    mean: 1000.0
+    sample_values: [1000]
+  - name: SKU_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 500000
+    max: 500150
+    mean: 500081.6
+    sample_values: [500000, 500001, 500005]
+  - name: SKU_NET_SALES
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 96.85
+    max: 7415.23
+    mean: 1561.0949
+    sample_values: [1166.36, 1080.89, 292.42]
+  - name: SKU_GROSS_SALES
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 108.46
+    max: 8489.8
+    mean: 1750.8057
+    sample_values: [1403.04, 1194.54, 334.22]
+  - name: SKU_COGS
+    type: NUMBER
+    distinct_count: 99
+    distinct_count_source: sample
+    null_count: 0
+    min: 80.4
+    max: 4936.8
+    mean: 1111.6029
+    sample_values: [762.24, 628.66, 189.04]
+  - name: SKU_MARKDOWN_AMOUNT
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 5.71
+    max: 1074.57
+    mean: 189.7108
+    sample_values: [236.68, 113.65, 41.8]
+  - name: SKU_UNITS
+    type: NUMBER
+    distinct_count: 69
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 408
+    mean: 66.54
+    sample_values: [48, 43, 17]
+  - name: MARKDOWN_RATE
+    type: NUMBER
+    distinct_count: 92
+    distinct_count_source: sample
+    null_count: 0
+    min: 0.0104
+    max: 0.1927
+    mean: 0.105645
+    sample_values: [0.1687, 0.0951, 0.1251]
+  - name: STORE_OPEN_DATE_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 20231001
+    max: 20231001
+    mean: 20231001.0
+    sample_values: [20231001]
+  - name: STORE_CLOSE_DATE_KEY
+    type: NUMBER
+    distinct_count: 0
+    distinct_count_source: sample
+    null_count: 100
+    sample_values: []
+  - name: STORE_REMODEL_START_DATE_KEY
+    type: NUMBER
+    distinct_count: 0
+    distinct_count_source: sample
+    null_count: 100
+    sample_values: []
+  - name: FISCAL_WEEK_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 202501
+    max: 202501
+    mean: 202501.0
+    sample_values: [202501]
+  - name: COMPARABLE_TWIN_DATE_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 20260201
+    max: 20260201
+    mean: 20260201.0
+    sample_values: [20260201]
+  - name: FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2025
+    max: 2025
+    mean: 2025.0
+    sample_values: [2025]
+  - name: STORE_OPEN_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2023
+    max: 2023
+    mean: 2023.0
+    sample_values: [2023]
+  - name: STORE_CLOSE_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 0
+    distinct_count_source: sample
+    null_count: 100
+    sample_values: []
+  - name: STORE_REMODEL_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 0
+    distinct_count_source: sample
+    null_count: 100
+    sample_values: []
+  - name: IS_FOOD
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 1
+    mean: 0.07
+    sample_values: [0, 1]
+  - name: PROMOTION_WINDOW_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 0
+    mean: 0.0
+    sample_values: [0]

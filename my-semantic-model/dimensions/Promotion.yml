@@ -1,0 +1,46 @@
+unique_name: Promotion
+object_type: dimension
+label: Promotion
+type: standard
+level_attributes:
+  - unique_name: Promotion Type
+    label: Promotion Type
+    dataset: DIM_PROMOTION
+    name_column: PROMOTION_TYPE
+    key_columns:
+      - PROMOTION_TYPE
+  - unique_name: Promotion
+    label: Promotion
+    dataset: DIM_PROMOTION
+    name_column: PROMOTION_NAME
+    key_columns:
+      - PROMOTION_KEY
+  - unique_name: Promotion Phase
+    label: Promotion Phase
+    dataset: DIM_PROMOTION
+    name_column: PROMOTION_PHASE
+    key_columns:
+      - PROMOTION_WINDOW_KEY
+    sort_column: PROMOTION_PHASE_SORT
+  - unique_name: Featured Department
+    label: Featured Department
+    dataset: DIM_PROMOTION
+    name_column: FEATURED_DEPARTMENT
+    key_columns:
+      - FEATURED_DEPARTMENT
+  - unique_name: Promotion Mechanic
+    label: Promotion Mechanic
+    dataset: DIM_PROMOTION
+    name_column: PROMOTION_MECHANIC
+    key_columns:
+      - PROMOTION_MECHANIC
+hierarchies:
+  - unique_name: Promotion Hierarchy
+    label: Promotion Hierarchy
+    levels:
+      - unique_name: Promotion Type
+        level_attribute: Promotion Type
+      - unique_name: Promotion
+        level_attribute: Promotion
+      - unique_name: Promotion Phase
+        level_attribute: Promotion Phase

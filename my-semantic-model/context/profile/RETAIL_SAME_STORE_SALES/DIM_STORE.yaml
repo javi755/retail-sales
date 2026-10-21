@@ -1,0 +1,189 @@
+tables:
+- name: DIM_STORE
+  schema: RETAIL_SAME_STORE_SALES
+  sample_rows: 100
+  declared_primary_key: [STORE_KEY]
+  columns:
+  - name: STORE_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1000
+    max: 1099
+    mean: 1049.5
+    sample_values: [1000, 1001, 1002]
+  - name: STORE_NUMBER
+    type: TEXT
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [S1000, S1001, S1002]
+  - name: STORE_NAME
+    type: TEXT
+    distinct_count: 58
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Brookvale Standard, Harbor Point Standard, Stonebridge Compact]
+  - name: REGION
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Northeast, Southeast, Midwest]
+  - name: DISTRICT
+    type: TEXT
+    distinct_count: 14
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Northeast D1, Northeast D2, Northeast D3]
+  - name: STATE_CODE
+    type: TEXT
+    distinct_count: 19
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [NY, NJ, PA]
+  - name: CITY
+    type: TEXT
+    distinct_count: 26
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Brookvale, Harbor Point, Stonebridge]
+  - name: STORE_FORMAT
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Standard, Compact, Flagship]
+  - name: SQUARE_FEET
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 23723
+    max: 127132
+    mean: 57270.04
+    sample_values: [71901, 62967, 29605]
+  - name: OPEN_DATE
+    type: DATE
+    distinct_count: 98
+    distinct_count_source: sample
+    null_count: 0
+    min: '2009-10-31'
+    max: '2026-05-01'
+    sample_values: ['2023-10-01', '2012-12-19', '2024-11-18']
+  - name: OPEN_DATE_KEY
+    type: NUMBER
+    distinct_count: 98
+    distinct_count_source: sample
+    null_count: 0
+    min: 20091031
+    max: 20260501
+    mean: 20185767.94
+    sample_values: [20231001, 20121219, 20241118]
+  - name: CLOSE_DATE
+    type: DATE
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 96
+    min: '2026-05-12'
+    max: '2026-07-11'
+    sample_values: ['2026-06-12', '2026-05-25', '2026-05-12']
+  - name: CLOSE_DATE_KEY
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 96
+    min: 20260512
+    max: 20260711
+    mean: 20260590.0
+    sample_values: [20260612, 20260525, 20260512]
+  - name: REMODEL_START_DATE
+    type: DATE
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 86
+    min: '2026-02-08'
+    max: '2026-06-07'
+    sample_values: ['2026-03-01', '2026-02-15', '2026-02-22']
+  - name: REMODEL_START_DATE_KEY
+    type: NUMBER
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 86
+    min: 20260208
+    max: 20260607
+    mean: 20260371.857143
+    sample_values: [20260301, 20260215, 20260222]
+  - name: REMODEL_END_DATE
+    type: DATE
+    distinct_count: 10
+    distinct_count_source: sample
+    null_count: 86
+    min: '2026-02-28'
+    max: '2026-07-11'
+    sample_values: ['2026-03-28', '2026-03-14', '2026-02-28']
+  - name: REMODEL_END_DATE_KEY
+    type: NUMBER
+    distinct_count: 10
+    distinct_count_source: sample
+    null_count: 86
+    min: 20260228
+    max: 20260711
+    mean: 20260452.0
+    sample_values: [20260328, 20260314, 20260228]
+  - name: REMODEL_SCOPE
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [None, Full Remodel, Expansion]
+  - name: REMODEL_CAPEX_USD
+    type: NUMBER
+    distinct_count: 14
+    distinct_count_source: sample
+    null_count: 86
+    min: 588000
+    max: 4829000
+    mean: 2524857.142857
+    sample_values: [2937000, 2890000, 4829000]
+  - name: OPEN_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 18
+    distinct_count_source: sample
+    null_count: 0
+    min: 2009
+    max: 2026
+    mean: 2018.41
+    sample_values: [2023, 2012, 2024]
+  - name: CLOSE_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 96
+    min: 2026
+    max: 2026
+    mean: 2026.0
+    sample_values: [2026]
+  - name: REMODEL_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 86
+    min: 2026
+    max: 2026
+    mean: 2026.0
+    sample_values: [2026]
+  - name: OWNERSHIP_TYPE
+    type: TEXT
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Company-owned, Franchise]
+  - name: FRANCHISEE_NAME
+    type: TEXT
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Company-owned (no franchisee), Harborline Retail Partners, Keystone
+        Valley Stores]

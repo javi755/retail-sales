@@ -1,0 +1,4 @@
+unique_name: Markdown_Rate_Pct
+object_type: metric_calc
+label: Markdown Rate %
+expression: "[SKU_Markdown_Amount] / [SKU_Gross_Sales]"

@@ -1,0 +1,6 @@
+unique_name: SKU_Units
+object_type: metric
+label: SKU Units
+dataset: FACT_SKU_MARGIN_PERIOD
+column: SKU_UNITS
+calculation_method: sum

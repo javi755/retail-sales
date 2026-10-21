@@ -1,0 +1,76 @@
+unique_name: Retail_Sales
+object_type: model
+label: Retail Sales
+relationships:
+  - unique_name: Store Sales to Date
+    from:
+      dataset: FACT_STORE_SALES_DAY
+      join_columns:
+        - DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: Store Sales to Store
+    from:
+      dataset: FACT_STORE_SALES_DAY
+      join_columns:
+        - STORE_KEY
+    to:
+      dimension: Store
+      level: Store
+  - unique_name: SKU Margin to Date
+    from:
+      dataset: FACT_SKU_MARGIN_PERIOD
+      join_columns:
+        - DATE_KEY
+    to:
+      dimension: Date
+      level: Day
+  - unique_name: SKU Margin to Store
+    from:
+      dataset: FACT_SKU_MARGIN_PERIOD
+      join_columns:
+        - STORE_KEY
+    to:
+      dimension: Store
+      level: Store
+  - unique_name: SKU Margin to Product
+    from:
+      dataset: FACT_SKU_MARGIN_PERIOD
+      join_columns:
+        - SKU_KEY
+    to:
+      dimension: Product
+      level: SKU
+  - unique_name: Store Sales to Promotion
+    from:
+      dataset: FACT_STORE_SALES_DAY
+      join_columns:
+        - PROMOTION_WINDOW_KEY
+    to:
+      dimension: Promotion
+      level: Promotion Phase
+  - unique_name: SKU Margin to Promotion
+    from:
+      dataset: FACT_SKU_MARGIN_PERIOD
+      join_columns:
+        - PROMOTION_WINDOW_KEY
+    to:
+      dimension: Promotion
+      level: Promotion Phase
+metrics:
+  - unique_name: Net_Sales
+  - unique_name: Transactions
+  - unique_name: Customer_Count
+  - unique_name: Units_Sold
+  - unique_name: LY_Net_Sales
+  - unique_name: SKU_Net_Sales
+  - unique_name: SKU_Gross_Sales
+  - unique_name: SKU_COGS
+  - unique_name: SKU_Markdown_Amount
+  - unique_name: SKU_Units
+  - unique_name: Avg_Transaction_Value
+  - unique_name: Sales_YoY_Growth_Pct
+  - unique_name: Gross_Margin
+  - unique_name: Gross_Margin_Pct
+  - unique_name: Markdown_Rate_Pct

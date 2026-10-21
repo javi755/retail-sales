@@ -1,0 +1,6 @@
+unique_name: SKU_Net_Sales
+object_type: metric
+label: SKU Net Sales
+dataset: FACT_SKU_MARGIN_PERIOD
+column: SKU_NET_SALES
+calculation_method: sum

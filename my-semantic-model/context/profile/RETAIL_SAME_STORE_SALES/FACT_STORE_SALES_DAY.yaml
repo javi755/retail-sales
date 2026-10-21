@@ -1,0 +1,185 @@
+tables:
+- name: FACT_STORE_SALES_DAY
+  schema: RETAIL_SAME_STORE_SALES
+  sample_rows: 100
+  declared_primary_key: [SALES_DAY_KEY]
+  declared_foreign_keys:
+  - columns: [STORE_KEY]
+    references:
+      table: DIM_STORE
+      columns: [STORE_KEY]
+  columns:
+  - name: SALES_DAY_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 100
+    mean: 50.5
+    sample_values: [1, 2, 3]
+  - name: DATE_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 20240204
+    max: 20240204
+    mean: 20240204.0
+    sample_values: [20240204]
+  - name: COMPARABLE_TWIN_DATE_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 20250202
+    max: 20250202
+    mean: 20250202.0
+    sample_values: [20250202]
+  - name: STORE_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1000
+    max: 1126
+    mean: 1062.44
+    sample_values: [1000, 1001, 1003]
+  - name: NET_SALES
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 13783.89
+    max: 121820.12
+    mean: 46277.9975
+    sample_values: [50367.17, 60708.69, 50603.39]
+  - name: TRANSACTIONS
+    type: NUMBER
+    distinct_count: 98
+    distinct_count_source: sample
+    null_count: 0
+    min: 211
+    max: 3042
+    mean: 882.54
+    sample_values: [652, 984, 1223]
+  - name: CUSTOMER_COUNT
+    type: NUMBER
+    distinct_count: 96
+    distinct_count_source: sample
+    null_count: 0
+    min: 230
+    max: 3526
+    mean: 1005.65
+    sample_values: [795, 1092, 1490]
+  - name: STORE_TENURE_WEEKS
+    type: NUMBER
+    distinct_count: 93
+    distinct_count_source: sample
+    null_count: 0
+    min: 4
+    max: 744
+    mean: 358.93
+    sample_values: [18, 580, 609]
+  - name: STORE_OPEN_DATE_KEY
+    type: NUMBER
+    distinct_count: 98
+    distinct_count_source: sample
+    null_count: 0
+    min: 20091031
+    max: 20240106
+    mean: 20167762.57
+    sample_values: [20231001, 20121219, 20120529]
+  - name: STORE_CLOSE_DATE_KEY
+    type: NUMBER
+    distinct_count: 6
+    distinct_count_source: sample
+    null_count: 94
+    min: 20260301
+    max: 20260711
+    mean: 20260544.833333
+    sample_values: [20260612, 20260525, 20260512]
+  - name: STORE_REMODEL_START_DATE_KEY
+    type: NUMBER
+    distinct_count: 8
+    distinct_count_source: sample
+    null_count: 87
+    min: 20260208
+    max: 20260607
+    mean: 20260375.692308
+    sample_values: [20260301, 20260215, 20260222]
+  - name: STORE_REMODEL_END_DATE_KEY
+    type: NUMBER
+    distinct_count: 10
+    distinct_count_source: sample
+    null_count: 87
+    min: 20260228
+    max: 20260711
+    mean: 20260454.615385
+    sample_values: [20260328, 20260314, 20260228]
+  - name: FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2024
+    max: 2024
+    mean: 2024.0
+    sample_values: [2024]
+  - name: PRIOR_TWIN_DATE_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 20230205
+    max: 20230205
+    mean: 20230205.0
+    sample_values: [20230205]
+  - name: STORE_OPEN_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    min: 2009
+    max: 2023
+    mean: 2016.61
+    sample_values: [2023, 2012, 2014]
+  - name: STORE_CLOSE_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 94
+    min: 2026
+    max: 2026
+    mean: 2026.0
+    sample_values: [2026]
+  - name: STORE_REMODEL_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 87
+    min: 2026
+    max: 2026
+    mean: 2026.0
+    sample_values: [2026]
+  - name: PROMOTION_WINDOW_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 0
+    mean: 0.0
+    sample_values: [0]
+  - name: UNITS_SOLD
+    type: NUMBER
+    distinct_count: 0
+    distinct_count_source: sample
+    null_count: 100
+    sample_values: []
+  - name: LY_NET_SALES
+    type: NUMBER
+    distinct_count: 0
+    distinct_count_source: sample
+    null_count: 100
+    sample_values: []

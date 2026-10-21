@@ -1,0 +1,54 @@
+unique_name: DIM_STORE
+object_type: dataset
+label: DIM_STORE
+connection_id: Connection - RETAIL_SAME_STORE_SALES
+table: DIM_STORE
+columns:
+  - name: STORE_KEY
+    data_type: decimal
+  - name: STORE_NUMBER
+    data_type: string
+  - name: STORE_NAME
+    data_type: string
+  - name: REGION
+    data_type: string
+  - name: DISTRICT
+    data_type: string
+  - name: STATE_CODE
+    data_type: string
+  - name: CITY
+    data_type: string
+  - name: STORE_FORMAT
+    data_type: string
+  - name: SQUARE_FEET
+    data_type: decimal
+  - name: OPEN_DATE
+    data_type: date
+  - name: OPEN_DATE_KEY
+    data_type: decimal
+  - name: CLOSE_DATE
+    data_type: date
+  - name: CLOSE_DATE_KEY
+    data_type: decimal
+  - name: REMODEL_START_DATE
+    data_type: date
+  - name: REMODEL_START_DATE_KEY
+    data_type: decimal
+  - name: REMODEL_END_DATE
+    data_type: date
+  - name: REMODEL_END_DATE_KEY
+    data_type: decimal
+  - name: REMODEL_SCOPE
+    data_type: string
+  - name: REMODEL_CAPEX_USD
+    data_type: decimal
+  - name: OPEN_FISCAL_YEAR
+    data_type: decimal
+  - name: CLOSE_FISCAL_YEAR
+    data_type: decimal
+  - name: REMODEL_FISCAL_YEAR
+    data_type: decimal
+  - name: OWNERSHIP_TYPE
+    data_type: string
+  - name: FRANCHISEE_NAME
+    data_type: string

@@ -1,0 +1,6 @@
+unique_name: SKU_Gross_Sales
+object_type: metric
+label: SKU Gross Sales
+dataset: FACT_SKU_MARGIN_PERIOD
+column: SKU_GROSS_SALES
+calculation_method: sum

@@ -1,0 +1,156 @@
+tables:
+- name: DIM_PROMOTION
+  schema: RETAIL_SAME_STORE_SALES
+  row_count: 10
+  row_count_source: sample
+  sample_rows: 10
+  declared_primary_key: [PROMOTION_WINDOW_KEY]
+  columns:
+  - name: PROMOTION_WINDOW_KEY
+    type: NUMBER
+    distinct_count: 10
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 33
+    mean: 19.8
+    sample_values: [0, 11, 12]
+    is_unique: true
+  - name: PROMOTION_KEY
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 3
+    mean: 1.8
+    sample_values: [0, 1, 2]
+    is_unique: false
+  - name: PROMOTION_CODE
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [NONE, PROMO-2025-BTC, PROMO-2025-FHR]
+    is_unique: false
+  - name: PROMOTION_NAME
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [No promotion, Back to Campus Bundle, Fall Home Refresh]
+    is_unique: false
+  - name: PROMOTION_TYPE
+    type: TEXT
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [No promotion, Basket builder, Stock-up multi-buy]
+    is_unique: false
+  - name: PROMOTION_MECHANIC
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [No promotion running, 'Buy any headphones or speaker, take 30
+        percent off a second audio or gaming item', 'Spend 75 dollars across Home,
+        save 15 dollars']
+    is_unique: false
+  - name: FEATURED_DEPARTMENT
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [None, Electronics & Entertainment, Home]
+    is_unique: false
+  - name: FEATURED_CLASS
+    type: TEXT
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [None, All classes, Pantry]
+    is_unique: false
+  - name: PROMOTION_START_DATE_KEY
+    type: NUMBER
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 1
+    min: 20250803
+    max: 20260308
+    mean: 20254041.0
+    sample_values: [20250803, 20251012, 20260308]
+    is_unique: false
+  - name: PROMOTION_END_DATE_KEY
+    type: NUMBER
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 1
+    min: 20250816
+    max: 20260321
+    mean: 20254054.0
+    sample_values: [20250816, 20251025, 20260321]
+    is_unique: false
+  - name: PROMOTION_START_DATE
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Not applicable, '2025-08-03', '2025-10-12']
+    is_unique: false
+  - name: PROMOTION_WEEKS
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 2
+    mean: 1.8
+    sample_values: [0, 2]
+    is_unique: false
+  - name: PROMOTION_PHASE
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [No promotion, Four weeks before, Promotion weeks]
+    is_unique: false
+  - name: PROMOTION_PHASE_SORT
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 9
+    mean: 2.7
+    sample_values: [9, 1, 2]
+    is_unique: false
+  - name: WINDOW_START_DATE_KEY
+    type: NUMBER
+    distinct_count: 9
+    distinct_count_source: sample
+    null_count: 1
+    min: 20250706
+    max: 20260322
+    mean: 20254012.888889
+    sample_values: [20250706, 20250803, 20250817]
+    is_unique: false
+  - name: WINDOW_END_DATE_KEY
+    type: NUMBER
+    distinct_count: 9
+    distinct_count_source: sample
+    null_count: 1
+    min: 20250802
+    max: 20260418
+    mean: 20254081.666667
+    sample_values: [20250802, 20250816, 20250913]
+    is_unique: false
+  - name: WINDOW_WEEKS
+    type: NUMBER
+    distinct_count: 3
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 4
+    mean: 3.0
+    sample_values: [0, 4, 2]
+    is_unique: false

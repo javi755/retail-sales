@@ -1,0 +1,323 @@
+tables:
+- name: DIM_RETAIL_CALENDAR
+  schema: RETAIL_SAME_STORE_SALES
+  sample_rows: 100
+  declared_primary_key: [DATE_KEY]
+  columns:
+  - name: DATE_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 20240204
+    max: 20240513
+    mean: 20240344.81
+    sample_values: [20240204, 20240205, 20240206]
+  - name: DATE_VALUE
+    type: DATE
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: '2024-02-04'
+    max: '2024-05-13'
+    sample_values: ['2024-02-04', '2024-02-05', '2024-02-06']
+  - name: DATE_NAME
+    type: TEXT
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: ['2024-02-04', '2024-02-05', '2024-02-06']
+  - name: DAY_OF_WEEK_NUM
+    type: NUMBER
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 7
+    mean: 3.95
+    sample_values: [1, 2, 3]
+  - name: DAY_OF_WEEK_NAME
+    type: TEXT
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Sunday, Monday, Tuesday]
+  - name: IS_WEEKEND
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 1
+    mean: 0.29
+    sample_values: [1, 0]
+  - name: FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2024
+    max: 2024
+    mean: 2024.0
+    sample_values: [2024]
+  - name: FISCAL_YEAR_NAME
+    type: TEXT
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [FY2024]
+  - name: PRIOR_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2023
+    max: 2023
+    mean: 2023.0
+    sample_values: [2023]
+  - name: FISCAL_QUARTER_KEY
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 20241
+    max: 20242
+    mean: 20241.09
+    sample_values: [20241, 20242]
+  - name: PRIOR_FISCAL_QUARTER_KEY
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 20231
+    max: 20232
+    mean: 20231.09
+    sample_values: [20231, 20232]
+  - name: FISCAL_QUARTER_NAME
+    type: TEXT
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [FY2024 Q1, FY2024 Q2]
+  - name: FISCAL_QUARTER_NUM
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 2
+    mean: 1.09
+    sample_values: [1, 2]
+  - name: FISCAL_PERIOD_KEY
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 202401
+    max: 202404
+    mean: 202402.18
+    sample_values: [202401, 202402, 202403]
+  - name: PRIOR_FISCAL_PERIOD_KEY
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 202301
+    max: 202304
+    mean: 202302.18
+    sample_values: [202301, 202302, 202303]
+  - name: FISCAL_PERIOD_NAME
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [FY2024 P01, FY2024 P02, FY2024 P03]
+  - name: FISCAL_PERIOD_NUM
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 4
+    mean: 2.18
+    sample_values: [1, 2, 3]
+  - name: FISCAL_PERIOD_MONTH_LABEL
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [February, March, April]
+  - name: FISCAL_PERIOD_WEEKS
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 4
+    max: 5
+    mean: 4.35
+    sample_values: [4, 5]
+  - name: FISCAL_WEEK_KEY
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    min: 202401
+    max: 202415
+    mean: 202407.65
+    sample_values: [202401, 202402, 202403]
+  - name: PRIOR_FISCAL_WEEK_KEY
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    min: 202301
+    max: 202315
+    mean: 202307.65
+    sample_values: [202301, 202302, 202303]
+  - name: FISCAL_WEEK_NAME
+    type: TEXT
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [FY2024 W01, FY2024 W02, FY2024 W03]
+  - name: FISCAL_WEEK_OF_YEAR
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 15
+    mean: 7.65
+    sample_values: [1, 2, 3]
+  - name: FISCAL_WEEK_OF_PERIOD
+    type: NUMBER
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 5
+    mean: 2.56
+    sample_values: [1, 2, 3]
+  - name: FISCAL_WEEK_START_DATE_KEY
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    min: 20240204
+    max: 20240512
+    mean: 20240333.5
+    sample_values: [20240204, 20240211, 20240218]
+  - name: FISCAL_WEEK_END_DATE_KEY
+    type: NUMBER
+    distinct_count: 15
+    distinct_count_source: sample
+    null_count: 0
+    min: 20240210
+    max: 20240518
+    mean: 20240354.2
+    sample_values: [20240210, 20240217, 20240224]
+  - name: CALENDAR_YEAR_NUM
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2024
+    max: 2024
+    mean: 2024.0
+    sample_values: [2024]
+  - name: CALENDAR_YEAR_NAME
+    type: TEXT
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: ['2024']
+  - name: PRIOR_CALENDAR_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2023
+    max: 2023
+    mean: 2023.0
+    sample_values: [2023]
+  - name: CALENDAR_QUARTER_KEY
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 20241
+    max: 20242
+    mean: 20241.43
+    sample_values: [20241, 20242]
+  - name: PRIOR_CALENDAR_QUARTER_KEY
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 20231
+    max: 20232
+    mean: 20231.43
+    sample_values: [20231, 20232]
+  - name: CALENDAR_QUARTER_NAME
+    type: TEXT
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [2024 CQ1, 2024 CQ2]
+  - name: CALENDAR_MONTH_KEY
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 202402
+    max: 202405
+    mean: 202403.3
+    sample_values: [202402, 202403, 202404]
+  - name: PRIOR_CALENDAR_MONTH_KEY
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 202302
+    max: 202305
+    mean: 202303.3
+    sample_values: [202302, 202303, 202304]
+  - name: CALENDAR_MONTH_NAME
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Feb 2024, Mar 2024, Apr 2024]
+  - name: CALENDAR_MONTH_OF_YEAR_NUM
+    type: NUMBER
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    min: 2
+    max: 5
+    mean: 3.3
+    sample_values: [2, 3, 4]
+  - name: CALENDAR_MONTH_OF_YEAR_NAME
+    type: TEXT
+    distinct_count: 4
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [February, March, April]
+  - name: LY_DATE_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 20230205
+    max: 20230515
+    mean: 20230350.77
+    sample_values: [20230205, 20230206, 20230207]
+  - name: PRIOR_CALENDAR_DATE_KEY
+    type: NUMBER
+    distinct_count: 99
+    distinct_count_source: sample
+    null_count: 0
+    min: 20230204
+    max: 20230513
+    mean: 20230344.8
+    sample_values: [20230204, 20230205, 20230206]

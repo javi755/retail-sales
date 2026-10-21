@@ -1,0 +1,46 @@
+unique_name: FACT_STORE_SALES_DAY
+object_type: dataset
+label: FACT_STORE_SALES_DAY
+connection_id: Connection - RETAIL_SAME_STORE_SALES
+table: FACT_STORE_SALES_DAY
+columns:
+  - name: SALES_DAY_KEY
+    data_type: decimal
+  - name: DATE_KEY
+    data_type: decimal
+  - name: COMPARABLE_TWIN_DATE_KEY
+    data_type: decimal
+  - name: STORE_KEY
+    data_type: decimal
+  - name: NET_SALES
+    data_type: decimal
+  - name: TRANSACTIONS
+    data_type: decimal
+  - name: CUSTOMER_COUNT
+    data_type: decimal
+  - name: STORE_TENURE_WEEKS
+    data_type: decimal
+  - name: STORE_OPEN_DATE_KEY
+    data_type: decimal
+  - name: STORE_CLOSE_DATE_KEY
+    data_type: decimal
+  - name: STORE_REMODEL_START_DATE_KEY
+    data_type: decimal
+  - name: STORE_REMODEL_END_DATE_KEY
+    data_type: decimal
+  - name: FISCAL_YEAR
+    data_type: decimal
+  - name: PRIOR_TWIN_DATE_KEY
+    data_type: decimal
+  - name: STORE_OPEN_FISCAL_YEAR
+    data_type: decimal
+  - name: STORE_CLOSE_FISCAL_YEAR
+    data_type: decimal
+  - name: STORE_REMODEL_FISCAL_YEAR
+    data_type: decimal
+  - name: PROMOTION_WINDOW_KEY
+    data_type: decimal
+  - name: UNITS_SOLD
+    data_type: decimal
+  - name: LY_NET_SALES
+    data_type: decimal

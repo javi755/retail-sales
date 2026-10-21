@@ -1,0 +1,32 @@
+unique_name: DIM_PRODUCT
+object_type: dataset
+label: DIM_PRODUCT
+connection_id: Connection - RETAIL_SAME_STORE_SALES
+table: DIM_PRODUCT
+columns:
+  - name: SKU_KEY
+    data_type: decimal
+  - name: SKU_CODE
+    data_type: string
+  - name: SKU_NAME
+    data_type: string
+  - name: BRAND
+    data_type: string
+  - name: IS_PRIVATE_LABEL
+    data_type: decimal
+  - name: DEPARTMENT
+    data_type: string
+  - name: MERCH_CLASS
+    data_type: string
+  - name: SUBCLASS
+    data_type: string
+  - name: UNIT_RETAIL_PRICE
+    data_type: decimal
+  - name: UNIT_STANDARD_COST
+    data_type: decimal
+  - name: LAUNCH_YEAR
+    data_type: decimal
+  - name: IS_SEASONAL
+    data_type: decimal
+  - name: IS_FOOD
+    data_type: decimal

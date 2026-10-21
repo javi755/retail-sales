@@ -1,0 +1,57 @@
+unique_name: Store
+object_type: dimension
+label: Store
+type: standard
+level_attributes:
+  - unique_name: Region
+    label: Region
+    dataset: DIM_STORE
+    name_column: REGION
+    key_columns:
+      - REGION
+  - unique_name: District
+    label: District
+    dataset: DIM_STORE
+    name_column: DISTRICT
+    key_columns:
+      - DISTRICT
+  - unique_name: State
+    label: State
+    dataset: DIM_STORE
+    name_column: STATE_CODE
+    key_columns:
+      - STATE_CODE
+  - unique_name: City
+    label: City
+    dataset: DIM_STORE
+    name_column: CITY
+    key_columns:
+      - CITY
+  - unique_name: Store
+    label: Store
+    dataset: DIM_STORE
+    name_column: STORE_NAME
+    key_columns:
+      - STORE_KEY
+  - unique_name: Store Format
+    label: Store Format
+    dataset: DIM_STORE
+    name_column: STORE_FORMAT
+    key_columns:
+      - STORE_FORMAT
+  - unique_name: Ownership Type
+    label: Ownership Type
+    dataset: DIM_STORE
+    name_column: OWNERSHIP_TYPE
+    key_columns:
+      - OWNERSHIP_TYPE
+hierarchies:
+  - unique_name: Store Geography
+    label: Store Geography
+    levels:
+      - unique_name: Region
+        level_attribute: Region
+      - unique_name: District
+        level_attribute: District
+      - unique_name: Store
+        level_attribute: Store

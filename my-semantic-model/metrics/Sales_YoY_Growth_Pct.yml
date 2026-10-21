@@ -1,0 +1,4 @@
+unique_name: Sales_YoY_Growth_Pct
+object_type: metric_calc
+label: Sales YoY Growth %
+expression: "([Net_Sales] - [LY_Net_Sales]) / [LY_Net_Sales]"

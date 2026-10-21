@@ -1,0 +1,146 @@
+tables:
+- name: FACT_FINANCE_LEDGER_PERIOD
+  schema: RETAIL_SAME_STORE_SALES
+  sample_rows: 100
+  declared_primary_key: [LEDGER_KEY]
+  declared_foreign_keys:
+  - columns: [STORE_KEY]
+    references:
+      table: DIM_STORE
+      columns: [STORE_KEY]
+  columns:
+  - name: LEDGER_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 100
+    mean: 50.5
+    sample_values: [1, 2, 3]
+  - name: DATE_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 20240302
+    max: 20240302
+    mean: 20240302.0
+    sample_values: [20240302]
+  - name: FISCAL_PERIOD_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 202401
+    max: 202401
+    mean: 202401.0
+    sample_values: [202401]
+  - name: STORE_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 1000
+    max: 1125
+    mean: 1062.43
+    sample_values: [1000, 1001, 1003]
+  - name: LEDGER_NET_SALES
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 411674.59
+    max: 2836534.33
+    mean: 1035899.3664
+    sample_values: [1091514.84, 1355421.79, 1109635.38]
+  - name: LEDGER_TRANSACTIONS
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 5977
+    max: 69483
+    mean: 19703.3
+    sample_values: [14921, 21768, 25984]
+  - name: TRADING_DAYS
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 18
+    max: 28
+    mean: 27.9
+    sample_values: [28, 18]
+  - name: IS_PERIOD_CLOSED
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 1
+    max: 1
+    mean: 1.0
+    sample_values: [1]
+  - name: CLOSE_STATUS
+    type: TEXT
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Closed]
+  - name: POSTED_DATE_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 20240308
+    max: 20240308
+    mean: 20240308.0
+    sample_values: [20240308]
+  - name: FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 2024
+    max: 2024
+    mean: 2024.0
+    sample_values: [2024]
+  - name: STORE_OPEN_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 16
+    distinct_count_source: sample
+    null_count: 0
+    min: 2009
+    max: 2024
+    mean: 2016.67
+    sample_values: [2023, 2012, 2014]
+  - name: STORE_CLOSE_FISCAL_YEAR
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 94
+    min: 2026
+    max: 2026
+    mean: 2026.0
+    sample_values: [2026]
+  - name: NAMED_CALENDAR_MONTH_KEY
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 202402
+    max: 202402
+    mean: 202402.0
+    sample_values: [202402]
+  - name: NAMED_MONTH_NET_SALES
+    type: NUMBER
+    distinct_count: 0
+    distinct_count_source: sample
+    null_count: 100
+    sample_values: []
+  - name: NAMED_MONTH_NET_SALES_LY
+    type: NUMBER
+    distinct_count: 0
+    distinct_count_source: sample
+    null_count: 100
+    sample_values: []

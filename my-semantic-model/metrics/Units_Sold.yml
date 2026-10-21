@@ -1,0 +1,6 @@
+unique_name: Units_Sold
+object_type: metric
+label: Units Sold
+dataset: FACT_STORE_SALES_DAY
+column: UNITS_SOLD
+calculation_method: sum

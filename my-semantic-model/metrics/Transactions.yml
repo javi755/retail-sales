@@ -1,0 +1,6 @@
+unique_name: Transactions
+object_type: metric
+label: Transactions
+dataset: FACT_STORE_SALES_DAY
+column: TRANSACTIONS
+calculation_method: sum

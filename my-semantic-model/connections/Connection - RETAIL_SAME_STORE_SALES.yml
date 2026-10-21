@@ -1,0 +1,6 @@
+unique_name: Connection - RETAIL_SAME_STORE_SALES
+object_type: connection
+label: Connection - RETAIL_SAME_STORE_SALES
+as_connection: Snowflake Partner
+database: RETAIL_SAME_STORE_SALES_DEMO
+schema: RETAIL_SAME_STORE_SALES

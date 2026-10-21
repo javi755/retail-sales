@@ -1,0 +1,6 @@
+unique_name: LY_Net_Sales
+object_type: metric
+label: LY Net Sales
+dataset: FACT_STORE_SALES_DAY
+column: LY_NET_SALES
+calculation_method: sum

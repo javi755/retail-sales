@@ -1,0 +1,105 @@
+tables:
+- name: DIM_PRODUCT
+  schema: RETAIL_SAME_STORE_SALES
+  sample_rows: 100
+  declared_primary_key: [SKU_KEY]
+  columns:
+  - name: SKU_KEY
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 500000
+    max: 500105
+    mean: 500052.2
+    sample_values: [500000, 500001, 500002]
+  - name: SKU_CODE
+    type: TEXT
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [SKU-500000, SKU-500001, SKU-500002]
+  - name: SKU_NAME
+    type: TEXT
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Quill & Co Tops 01, Northfield Bottoms 02, Marbury Outerwear 03]
+  - name: BRAND
+    type: TEXT
+    distinct_count: 13
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Quill & Co, Northfield, Marbury]
+  - name: IS_PRIVATE_LABEL
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 1
+    mean: 0.26
+    sample_values: [0, 1]
+  - name: DEPARTMENT
+    type: TEXT
+    distinct_count: 5
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Apparel, Home, Outdoor Living]
+  - name: MERCH_CLASS
+    type: TEXT
+    distinct_count: 14
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Womens, Mens, Kids]
+  - name: SUBCLASS
+    type: TEXT
+    distinct_count: 26
+    distinct_count_source: sample
+    null_count: 0
+    sample_values: [Tops, Bottoms, Outerwear]
+  - name: UNIT_RETAIL_PRICE
+    type: NUMBER
+    distinct_count: 97
+    distinct_count_source: sample
+    null_count: 0
+    min: 6.4
+    max: 597.52
+    mean: 56.7068
+    sample_values: [29.23, 27.78, 48.93]
+  - name: UNIT_STANDARD_COST
+    type: NUMBER
+    distinct_count: 100
+    distinct_count_source: sample
+    null_count: 0
+    min: 4.46
+    max: 377.34
+    mean: 36.8447
+    sample_values: [15.88, 14.62, 24.71]
+  - name: LAUNCH_YEAR
+    type: NUMBER
+    distinct_count: 7
+    distinct_count_source: sample
+    null_count: 0
+    min: 2019
+    max: 2025
+    mean: 2022.21
+    sample_values: [2024, 2020, 2021]
+  - name: IS_SEASONAL
+    type: NUMBER
+    distinct_count: 2
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 1
+    mean: 0.21
+    sample_values: [0, 1]
+  - name: IS_FOOD
+    type: NUMBER
+    distinct_count: 1
+    distinct_count_source: sample
+    null_count: 0
+    min: 0
+    max: 0
+    mean: 0.0
+    sample_values: [0]

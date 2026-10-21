@@ -1,0 +1,6 @@
+unique_name: Net_Sales
+object_type: metric
+label: Net Sales
+dataset: FACT_STORE_SALES_DAY
+column: NET_SALES
+calculation_method: sum

@@ -1,0 +1,50 @@
+unique_name: FACT_SKU_MARGIN_PERIOD
+object_type: dataset
+label: FACT_SKU_MARGIN_PERIOD
+connection_id: Connection - RETAIL_SAME_STORE_SALES
+table: FACT_SKU_MARGIN_PERIOD
+columns:
+  - name: SKU_SALES_KEY
+    data_type: decimal
+  - name: DATE_KEY
+    data_type: decimal
+  - name: FISCAL_PERIOD_KEY
+    data_type: decimal
+  - name: STORE_KEY
+    data_type: decimal
+  - name: SKU_KEY
+    data_type: decimal
+  - name: SKU_NET_SALES
+    data_type: decimal
+  - name: SKU_GROSS_SALES
+    data_type: decimal
+  - name: SKU_COGS
+    data_type: decimal
+  - name: SKU_MARKDOWN_AMOUNT
+    data_type: decimal
+  - name: SKU_UNITS
+    data_type: decimal
+  - name: MARKDOWN_RATE
+    data_type: decimal
+  - name: STORE_OPEN_DATE_KEY
+    data_type: decimal
+  - name: STORE_CLOSE_DATE_KEY
+    data_type: decimal
+  - name: STORE_REMODEL_START_DATE_KEY
+    data_type: decimal
+  - name: FISCAL_WEEK_KEY
+    data_type: decimal
+  - name: COMPARABLE_TWIN_DATE_KEY
+    data_type: decimal
+  - name: FISCAL_YEAR
+    data_type: decimal
+  - name: STORE_OPEN_FISCAL_YEAR
+    data_type: decimal
+  - name: STORE_CLOSE_FISCAL_YEAR
+    data_type: decimal
+  - name: STORE_REMODEL_FISCAL_YEAR
+    data_type: decimal
+  - name: IS_FOOD
+    data_type: decimal
+  - name: PROMOTION_WINDOW_KEY
+    data_type: decimal

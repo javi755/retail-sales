@@ -1,0 +1,6 @@
+unique_name: Customer_Count
+object_type: metric
+label: Customer Count
+dataset: FACT_STORE_SALES_DAY
+column: CUSTOMER_COUNT
+calculation_method: sum

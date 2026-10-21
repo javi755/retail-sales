@@ -1,0 +1,6 @@
+unique_name: SKU_COGS
+object_type: metric
+label: SKU COGS
+dataset: FACT_SKU_MARGIN_PERIOD
+column: SKU_COGS
+calculation_method: sum

@@ -1,0 +1,47 @@
+unique_name: Product
+object_type: dimension
+label: Product
+type: standard
+level_attributes:
+  - unique_name: Department
+    label: Department
+    dataset: DIM_PRODUCT
+    name_column: DEPARTMENT
+    key_columns:
+      - DEPARTMENT
+  - unique_name: Merchandise Class
+    label: Merchandise Class
+    dataset: DIM_PRODUCT
+    name_column: MERCH_CLASS
+    key_columns:
+      - MERCH_CLASS
+  - unique_name: Subclass
+    label: Subclass
+    dataset: DIM_PRODUCT
+    name_column: SUBCLASS
+    key_columns:
+      - SUBCLASS
+  - unique_name: SKU
+    label: SKU
+    dataset: DIM_PRODUCT
+    name_column: SKU_NAME
+    key_columns:
+      - SKU_KEY
+  - unique_name: Brand
+    label: Brand
+    dataset: DIM_PRODUCT
+    name_column: BRAND
+    key_columns:
+      - BRAND
+hierarchies:
+  - unique_name: Merchandise Hierarchy
+    label: Merchandise Hierarchy
+    levels:
+      - unique_name: Department
+        level_attribute: Department
+      - unique_name: Merchandise Class
+        level_attribute: Merchandise Class
+      - unique_name: Subclass
+        level_attribute: Subclass
+      - unique_name: SKU
+        level_attribute: SKU

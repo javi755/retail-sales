@@ -1,0 +1,4 @@
+unique_name: Avg_Transaction_Value
+object_type: metric_calc
+label: Avg Transaction Value
+expression: "[Net_Sales] / [Transactions]"

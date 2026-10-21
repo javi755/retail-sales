@@ -1,0 +1,84 @@
+unique_name: DIM_RETAIL_CALENDAR
+object_type: dataset
+label: DIM_RETAIL_CALENDAR
+connection_id: Connection - RETAIL_SAME_STORE_SALES
+table: DIM_RETAIL_CALENDAR
+columns:
+  - name: DATE_KEY
+    data_type: decimal
+  - name: DATE_VALUE
+    data_type: date
+  - name: DATE_NAME
+    data_type: string
+  - name: DAY_OF_WEEK_NUM
+    data_type: decimal
+  - name: DAY_OF_WEEK_NAME
+    data_type: string
+  - name: IS_WEEKEND
+    data_type: decimal
+  - name: FISCAL_YEAR
+    data_type: decimal
+  - name: FISCAL_YEAR_NAME
+    data_type: string
+  - name: PRIOR_FISCAL_YEAR
+    data_type: decimal
+  - name: FISCAL_QUARTER_KEY
+    data_type: decimal
+  - name: PRIOR_FISCAL_QUARTER_KEY
+    data_type: decimal
+  - name: FISCAL_QUARTER_NAME
+    data_type: string
+  - name: FISCAL_QUARTER_NUM
+    data_type: decimal
+  - name: FISCAL_PERIOD_KEY
+    data_type: decimal
+  - name: PRIOR_FISCAL_PERIOD_KEY
+    data_type: decimal
+  - name: FISCAL_PERIOD_NAME
+    data_type: string
+  - name: FISCAL_PERIOD_NUM
+    data_type: decimal
+  - name: FISCAL_PERIOD_MONTH_LABEL
+    data_type: string
+  - name: FISCAL_PERIOD_WEEKS
+    data_type: decimal
+  - name: FISCAL_WEEK_KEY
+    data_type: decimal
+  - name: PRIOR_FISCAL_WEEK_KEY
+    data_type: decimal
+  - name: FISCAL_WEEK_NAME
+    data_type: string
+  - name: FISCAL_WEEK_OF_YEAR
+    data_type: decimal
+  - name: FISCAL_WEEK_OF_PERIOD
+    data_type: decimal
+  - name: FISCAL_WEEK_START_DATE_KEY
+    data_type: decimal
+  - name: FISCAL_WEEK_END_DATE_KEY
+    data_type: decimal
+  - name: CALENDAR_YEAR_NUM
+    data_type: decimal
+  - name: CALENDAR_YEAR_NAME
+    data_type: string
+  - name: PRIOR_CALENDAR_YEAR
+    data_type: decimal
+  - name: CALENDAR_QUARTER_KEY
+    data_type: decimal
+  - name: PRIOR_CALENDAR_QUARTER_KEY
+    data_type: decimal
+  - name: CALENDAR_QUARTER_NAME
+    data_type: string
+  - name: CALENDAR_MONTH_KEY
+    data_type: decimal
+  - name: PRIOR_CALENDAR_MONTH_KEY
+    data_type: decimal
+  - name: CALENDAR_MONTH_NAME
+    data_type: string
+  - name: CALENDAR_MONTH_OF_YEAR_NUM
+    data_type: decimal
+  - name: CALENDAR_MONTH_OF_YEAR_NAME
+    data_type: string
+  - name: LY_DATE_KEY
+    data_type: decimal
+  - name: PRIOR_CALENDAR_DATE_KEY
+    data_type: decimal

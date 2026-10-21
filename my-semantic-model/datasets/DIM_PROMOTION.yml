@@ -1,0 +1,40 @@
+unique_name: DIM_PROMOTION
+object_type: dataset
+label: DIM_PROMOTION
+connection_id: Connection - RETAIL_SAME_STORE_SALES
+table: DIM_PROMOTION
+columns:
+  - name: PROMOTION_WINDOW_KEY
+    data_type: decimal
+  - name: PROMOTION_KEY
+    data_type: decimal
+  - name: PROMOTION_CODE
+    data_type: string
+  - name: PROMOTION_NAME
+    data_type: string
+  - name: PROMOTION_TYPE
+    data_type: string
+  - name: PROMOTION_MECHANIC
+    data_type: string
+  - name: FEATURED_DEPARTMENT
+    data_type: string
+  - name: FEATURED_CLASS
+    data_type: string
+  - name: PROMOTION_START_DATE_KEY
+    data_type: decimal
+  - name: PROMOTION_END_DATE_KEY
+    data_type: decimal
+  - name: PROMOTION_START_DATE
+    data_type: string
+  - name: PROMOTION_WEEKS
+    data_type: decimal
+  - name: PROMOTION_PHASE
+    data_type: string
+  - name: PROMOTION_PHASE_SORT
+    data_type: decimal
+  - name: WINDOW_START_DATE_KEY
+    data_type: decimal
+  - name: WINDOW_END_DATE_KEY
+    data_type: decimal
+  - name: WINDOW_WEEKS
+    data_type: decimal

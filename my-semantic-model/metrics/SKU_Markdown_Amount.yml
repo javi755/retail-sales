@@ -1,0 +1,6 @@
+unique_name: SKU_Markdown_Amount
+object_type: metric
+label: SKU Markdown Amount
+dataset: FACT_SKU_MARGIN_PERIOD
+column: SKU_MARKDOWN_AMOUNT
+calculation_method: sum

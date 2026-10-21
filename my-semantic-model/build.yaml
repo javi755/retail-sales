@@ -1,0 +1,11 @@
+# Settings for the build-model skill; see its references/build-config.md.
+inputs:
+  data_source:
+    # A folder: db profile saves one file for each table, and each file is one
+    # entry of the skill's tables: list.
+    data_profile_yaml: ./context/profile/RETAIL_SAME_STORE_SALES/
+# The skill writes the SML files into this project.
+output_dir: ./
+database: RETAIL_SAME_STORE_SALES_DEMO
+schema: RETAIL_SAME_STORE_SALES
+warehouse: Snowflake
